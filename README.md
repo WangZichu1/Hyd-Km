@@ -1,7 +1,9 @@
 # Hyd-Km
 The Hyd-Km model, and code
 The code is stored here(including the packed full code). And the model weights store at zenodo(https://doi.org/10.5281/zenodo.22233616), the model wetights for mutant testset were provided here in the "mutant_prediction" folder.
+
 ################################################################################################Data
+
 raw data and the prepared dataset are provided at (https://doi.org/10.5281/zenodo.19853620).
 
 For convenience， we collected the generated embeddings, entry ids, logKM values, and saved them as ".pth" dataset files. You can directly load them for model test. 
@@ -22,6 +24,7 @@ Super water：https://github.com/kuangxh9/SuperWater)
 2.Protein sequences, SMILES, and structure files need to be prepared to generate embeddings.
 
 3.Once the embeddings are obtained, you can use the tools provided here(data_processing&utils) to construct the training and test sets.
+
 ################################################################################################Fusion&control&baselines
 
 The dataset loading module, the model module, and the training and inference modules are decoupled into independent, callable components.
